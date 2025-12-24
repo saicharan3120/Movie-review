@@ -41,7 +41,7 @@ def get_user_count(movie):
     return cursor.fetchone()[0]
 
 # ---------------- MOVIES ----------------
-movies = ["Salaar", "SVSC", "Srimanthudu", "Gabbarsingh", "OG"]
+movies = ["Salaar", "SVSC", "Mahavatar Narsimha", "Strager Things", "OG"]
 
 # ---------------- ADMIN PANEL ----------------
 st.sidebar.title("🛠 Admin Panel")
@@ -96,3 +96,4 @@ for m in movies:
     st.write(
         f"🎬 {m} | ⭐ Average: {get_average(m)} | 👥 Users: {get_user_count(m)}"
     )
+
